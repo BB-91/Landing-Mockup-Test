@@ -10,6 +10,7 @@ body {
   color: #394166;
   padding: 14px 20px;
   font-size: 24px;
+  font-family: "IBM Plex Sans";
 }
 
 #mobile-status-bar,
@@ -53,4 +54,39 @@ header {
   color: #394166;
   border-radius: 5px;
   border: 1px solid #394166;
+}
+
+.button.negative {
+  color: #fefdf8;
+  background-color: #394166;
+}
+
+#button-dadvice {
+  width: 250px;
+  margin: auto;
+}
+
+#mobile-app {
+  height: 800px;
+  display: block;
+  margin: 20px auto;
+}
+
+#section-top {
+  text-align: center;
+}
+
+#section-middle {
+  display: grid;
+  row-gap: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Nunito";
+  color: #1ab9f1;
+}
+
+h3 {
+  color: #1ab9f1;
 }

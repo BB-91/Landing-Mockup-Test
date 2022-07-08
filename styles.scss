@@ -13,6 +13,8 @@ $color-dark: #394166;
 $color-light: #1ab9f1;
 $color-footer: #fffcdd;
 
+$row-gap: 20px;
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +26,7 @@ body {
     color: $color-dark;
     padding: 14px 20px;
     font-size: $font-size-medium;
+    font-family: $font-primary;
 }
 
 #mobile-status-bar,
@@ -70,4 +73,40 @@ header {
     color: $color-dark;
     border-radius: 5px;
     border: 1px solid $color-dark;
+}
+
+.button.negative{
+    color: $color-bg;
+    background-color: $color-dark;
+}
+
+#button-dadvice {
+    width: 250px;
+    margin: auto;
+}
+
+#mobile-app{
+    height: 800px;
+    display: block;
+    margin: $row-gap auto;
+}
+
+#section-top {
+    text-align: center;
+}
+
+#section-middle {
+    display: grid;
+    row-gap: $row-gap;
+    text-align: center;
+}
+
+h1 {
+    font-family: $font-secondary;
+    color: $color-light;
+}
+
+
+h3 {
+    color: $color-light;
 }
