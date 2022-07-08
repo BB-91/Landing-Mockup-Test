@@ -83,50 +83,19 @@ header {
   text-align: center;
 }
 
-#section-bottom:nth-child(1) {
-  grid-area: txt1;
-}
-
-#section-bottom:nth-child(2) {
-  grid-area: img1;
-}
-
-#section-bottom:nth-child(3) {
-  grid-area: txt2;
-}
-
-#section-bottom:nth-child(4) {
-  grid-area: img2;
-}
-
-#section-bottom:nth-child(5) {
-  grid-area: txt3;
-}
-
-#section-bottom:nth-child(6) {
-  grid-area: img3;
-}
-
-#section-bottom:nth-child(7) {
-  grid-area: txt4;
-}
-
-#section-bottom:nth-child(8) {
-  grid-area: img4;
-}
-
 .row {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
-
-div p {
-  width: 70%;
+.row p {
+  width: 68%;
 }
-div img {
+.row img {
   width: 30%;
   height: auto;
+  max-height: 170px;
 }
 
 h1 {
