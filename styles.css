@@ -83,10 +83,44 @@ header {
   text-align: center;
 }
 
+#section-bottom:nth-child(1) {
+  grid-area: txt1;
+}
+
+#section-bottom:nth-child(2) {
+  grid-area: img1;
+}
+
+#section-bottom:nth-child(3) {
+  grid-area: txt2;
+}
+
+#section-bottom:nth-child(4) {
+  grid-area: img2;
+}
+
+#section-bottom:nth-child(5) {
+  grid-area: txt3;
+}
+
+#section-bottom:nth-child(6) {
+  grid-area: img3;
+}
+
+#section-bottom:nth-child(7) {
+  grid-area: txt4;
+}
+
+#section-bottom:nth-child(8) {
+  grid-area: img4;
+}
+
 #section-bottom {
+  text-align: center;
   display: grid;
   row-gap: 20px;
-  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "txt1 txt1 txt1 img1" "img2 txt2 txt2 txt2" "txt3 txt3 txt3 img3" "img4 txt4 txt4 txt4";
 }
 
 h1 {
