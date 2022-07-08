@@ -8,9 +8,16 @@
 body {
   background-color: #fefdf8;
   color: #394166;
+  padding: 14px 20px;
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-group {
   display: flex;
   align-items: center;
 }
@@ -22,14 +29,14 @@ header {
 
 .button {
   display: block;
-  padding: 10px;
+  padding: 10px 0px;
+  width: 140px;
   height: 60px;
-  width: 120px;
   font-family: "IBM Plex Sans";
   font-size: 24px;
   text-align: center;
-  color: #394166;
   text-decoration: none;
+  color: #394166;
   border-radius: 5px;
   border: 1px solid #394166;
 }

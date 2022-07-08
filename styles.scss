@@ -22,12 +22,19 @@ $color-footer: #fffcdd;
 body {
     background-color: $color-bg;
     color: $color-dark;
+    padding: 14px 20px;
 }
 
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+
+#logo-group {
+    display: flex;
+    align-items: center;
+  }
 
 #logo-text {
     font-family: $font-logo;
@@ -35,13 +42,18 @@ header {
 }
 
 .button {
-    height: $font-size-logo;
+    display: block;
+    padding: 10px 0px;
+
     width: 140px;
+    height: $font-size-logo;
+
     font-family: $font-primary;
     font-size: $font-size-medium;
     text-align: center;
-    color: $color-dark;
     text-decoration: none;
+    
+    color: $color-dark;
     border-radius: 5px;
     border: 1px solid $color-dark;
 }
