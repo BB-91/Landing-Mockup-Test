@@ -80,7 +80,8 @@ header {
     background-color: $color-dark;
 }
 
-#button-dadvice {
+#button-dadvice,
+#button-signup {
     width: 250px;
     margin: auto;
 }
@@ -96,6 +97,12 @@ header {
 }
 
 #section-middle {
+    display: grid;
+    row-gap: $row-gap;
+    text-align: center;
+}
+
+#section-bottom {
     display: grid;
     row-gap: $row-gap;
     text-align: center;
