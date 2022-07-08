@@ -23,6 +23,20 @@ body {
     background-color: $color-bg;
     color: $color-dark;
     padding: 14px 20px;
+    font-size: $font-size-medium;
+}
+
+#mobile-status-bar,
+#mobile-icons {
+    color: $color-black;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-icon {
+    width: 35px;
+    height: auto;
 }
 
 header {
@@ -52,7 +66,7 @@ header {
     font-size: $font-size-medium;
     text-align: center;
     text-decoration: none;
-    
+
     color: $color-dark;
     border-radius: 5px;
     border: 1px solid $color-dark;

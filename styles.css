@@ -9,6 +9,20 @@ body {
   background-color: #fefdf8;
   color: #394166;
   padding: 14px 20px;
+  font-size: 24px;
+}
+
+#mobile-status-bar,
+#mobile-icons {
+  color: #444041;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-icon {
+  width: 35px;
+  height: auto;
 }
 
 header {
