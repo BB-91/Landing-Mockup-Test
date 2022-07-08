@@ -4,6 +4,9 @@ $font-logo: "Boogaloo";
 $font-primary: "IBM Plex Sans";
 $font-secondary: "Nunito";
 
+$font-size-logo: 60px;
+$font-size-medium: 24px;
+
 $color-bg: #fefdf8;
 $color-black: #444041;
 $color-dark: #394166;
@@ -14,4 +17,31 @@ $color-footer: #fffcdd;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: $color-bg;
+    color: $color-dark;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+#logo-text {
+    font-family: $font-logo;
+    font-size: $font-size-logo;
+}
+
+.button {
+    height: $font-size-logo;
+    width: 140px;
+    font-family: $font-primary;
+    font-size: $font-size-medium;
+    text-align: center;
+    color: $color-dark;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid $color-dark;
 }

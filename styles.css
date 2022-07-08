@@ -4,3 +4,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #fefdf8;
+  color: #394166;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+#logo-text {
+  font-family: "Boogaloo";
+  font-size: 60px;
+}
+
+.button {
+  display: block;
+  padding: 10px;
+  height: 60px;
+  width: 120px;
+  font-family: "IBM Plex Sans";
+  font-size: 24px;
+  text-align: center;
+  color: #394166;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #394166;
+}
