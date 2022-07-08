@@ -115,12 +115,18 @@ header {
   grid-area: img4;
 }
 
-#section-bottom {
-  text-align: center;
-  display: grid;
-  row-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "txt1 txt1 txt1 img1" "img2 txt2 txt2 txt2" "txt3 txt3 txt3 img3" "img4 txt4 txt4 txt4";
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+div p {
+  width: 70%;
+}
+div img {
+  width: 30%;
+  height: auto;
 }
 
 h1 {
