@@ -64,14 +64,14 @@ body {
 #mobile-status-bar,
 header,
 main {
-  margin: 20px 20px;
+  margin: calc(20px) 40px;
 }
 
 #mobile-status-bar,
 #mobile-icons {
   font-weight: 600;
   color: #444041;
-  height: 20px;
+  height: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -114,7 +114,7 @@ a {
 #mobile-app {
   max-width: 85vw;
   display: block;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 #section-top {
@@ -123,13 +123,13 @@ a {
 
 #section-middle {
   display: grid;
-  row-gap: 20px;
+  row-gap: 40px;
   text-align: center;
 }
 
 #section-bottom {
   display: grid;
-  row-gap: 20px;
+  row-gap: 40px;
   max-width: 520px;
   margin: 0 auto;
 }
@@ -151,8 +151,9 @@ a {
 footer {
   font-size: calc(max(min(6.0vw, 28px), 16px) - 2px);
   display: grid;
-  row-gap: 20px;
+  row-gap: calc(20px);
   text-align: center;
-  padding: 20px 0;
+  padding: calc(20px) 0;
+  margin-top: calc(80px);
   background-color: #fffcdd;
 }

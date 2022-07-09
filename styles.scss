@@ -15,7 +15,9 @@ $color-dark: #394166;
 $color-light: #1ab9f1;
 $color-footer: #fffcdd;
 
-$row-gap: 20px;
+$row-gap: 40px;
+$half-gap: calc(#{$row-gap/2});
+$double-gap: calc(#{$row-gap*2});
 
 * {
     margin: 0;
@@ -82,7 +84,7 @@ body {
 #mobile-status-bar,
 header,
 main {
-    margin: $row-gap $row-gap;
+    margin: $half-gap $row-gap;
 }
 
 #mobile-status-bar,
@@ -172,8 +174,9 @@ a {
 footer {
     font-size: $font-size-h2;
     display: grid;
-    row-gap: $row-gap;
+    row-gap: $half-gap;
     text-align: center;
-    padding: $row-gap 0;
+    padding: $half-gap 0;
+    margin-top: $double-gap;
     background-color: $color-footer;
 }
