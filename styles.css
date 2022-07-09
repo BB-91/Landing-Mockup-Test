@@ -131,6 +131,7 @@ a {
   display: grid;
   row-gap: 20px;
   max-width: 520px;
+  margin: 0 auto;
 }
 
 .row {
