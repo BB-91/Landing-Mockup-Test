@@ -83,6 +83,11 @@ header {
   text-align: center;
 }
 
+#section-bottom {
+  display: grid;
+  row-gap: 20px;
+}
+
 .row {
   display: flex;
   align-items: center;
@@ -95,7 +100,7 @@ header {
 .row img {
   width: 30%;
   height: auto;
-  max-height: 170px;
+  max-height: 200px;
 }
 
 h1 {
