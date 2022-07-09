@@ -31,67 +31,6 @@ body {
   font-family: "IBM Plex Sans";
 }
 
-#logo-group {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-#logo {
-  height: 100%;
-}
-
-#logo-text {
-  font-family: "Boogaloo";
-  font-size: min(10vw, 74px);
-}
-
-#button-login,
-#button-dadvice,
-#button-signup {
-  font-size: calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px);
-  height: calc(calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px) * 3);
-  padding-top: calc(calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px) * 0.8);
-  aspect-ratio: 2.5/1;
-}
-
-#button-dadvice,
-#button-signup {
-  aspect-ratio: 4/1;
-  margin: auto;
-}
-
-#mobile-status-bar,
-header,
-main {
-  margin: calc(20px) 40px;
-}
-
-#mobile-status-bar,
-#mobile-icons {
-  font-weight: 600;
-  color: #444041;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#mobile-status-bar {
-  align-items: center;
-}
-
-.mobile-icon {
-  width: 35px;
-  height: auto;
-}
-
-header {
-  height: min(20vw, 120px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 a {
   text-decoration: none;
   color: #394166;
@@ -111,14 +50,52 @@ a {
   background-color: #394166;
 }
 
-#mobile-app {
-  max-width: 85vw;
-  display: block;
-  margin: 40px auto;
+#button-login,
+#button-dadvice,
+#button-signup {
+  font-size: calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px);
+  height: calc(calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px) * 3);
+  padding-top: calc(calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px) * 0.8);
+  aspect-ratio: 2.5/1;
+}
+
+#button-dadvice,
+#button-signup {
+  aspect-ratio: 4/1;
+  margin: auto;
+}
+
+header,
+main {
+  margin: calc(20px) 40px;
+}
+
+header {
+  height: min(20vw, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #logo-group {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header #logo-group #logo {
+  height: 100%;
+}
+header #logo-group #logo-text {
+  font-family: "Boogaloo";
+  font-size: min(10vw, 74px);
 }
 
 #section-top {
   text-align: center;
+}
+#section-top #mobile-app {
+  max-width: 85vw;
+  display: block;
+  margin: 40px auto;
 }
 
 #section-middle {
@@ -133,22 +110,20 @@ a {
   max-width: 520px;
   margin: 0 auto;
 }
-
-.row {
+#section-bottom .row {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
 }
-.row p {
+#section-bottom .row p {
   font-size: calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px);
   width: 68%;
 }
-.row img {
+#section-bottom .row img {
   width: 156px;
 }
-
-.text-right {
+#section-bottom .text-right {
   padding-left: 30px;
 }
 

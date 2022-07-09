@@ -1,0 +1,80 @@
+@import '_variables.scss';
+
+header,
+main {
+    margin: $half-gap $row-gap;
+}
+
+header {
+    height: min(20vw, 120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    #logo-group {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        #logo {
+            height: 100%;
+        }
+
+        #logo-text {
+            font-family: $font-logo;
+            font-size: min(10vw, 74px);
+        }
+      }
+}
+
+#section-top {
+    text-align: center;
+
+    #mobile-app{
+        max-width: 85vw;
+        display: block;
+        margin: $row-gap auto;
+    }
+}
+
+#section-middle {
+    display: grid;
+    row-gap: $row-gap;
+    text-align: center;
+}
+
+#section-bottom {
+    display: grid;
+    row-gap: $row-gap;
+    max-width: 520px;
+    margin: 0 auto;
+
+    .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    
+        p {
+            font-size: $font-size-h4;
+            width: 68%;
+        }
+        img {
+            width: 156px;
+        }
+    }
+    
+    .text-right {
+        padding-left: 30px;
+    }
+}
+
+footer {
+    font-size: $font-size-h2;
+    display: grid;
+    row-gap: $half-gap;
+    text-align: center;
+    padding: $half-gap 0;
+    margin-top: $double-gap;
+    background-color: $color-footer;
+}
