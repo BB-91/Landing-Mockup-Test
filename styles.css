@@ -15,15 +15,20 @@ body {
 #mobile-status-bar,
 header,
 main {
-  padding: 14px 20px;
+  margin: 20px 20px;
 }
 
 #mobile-status-bar,
 #mobile-icons {
+  font-weight: 600;
   color: #444041;
   height: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+#mobile-status-bar {
+  align-items: center;
 }
 
 .mobile-icon {
@@ -119,6 +124,10 @@ h1 {
 
 h3 {
   color: #1ab9f1;
+}
+
+h4 {
+  font-weight: 300;
 }
 
 footer {
