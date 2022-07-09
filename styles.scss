@@ -102,6 +102,7 @@ a {
 
 #mobile-app{
     height: 800px;
+    max-width: 85vw;
     display: block;
     margin: $row-gap auto;
 }
@@ -119,6 +120,8 @@ a {
 #section-bottom {
     display: grid;
     row-gap: $row-gap;
+    max-width: 520px;
+    margin: 0 30%;
 }
 
 .row {
@@ -131,9 +134,7 @@ a {
         width: 68%;
     }
     img {
-        width: 30%;
-        height: auto;
-        max-height: 200px;
+        width: 156px;
     }
 }
 
