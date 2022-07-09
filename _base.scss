@@ -24,14 +24,14 @@ h4 {
     font-weight: 300;
 }
 
-body {
-    background-color: $color-bg;
-    color: $color-dark;
-    font-family: $font-primary;
-}
-
 a {
     text-decoration: none;
     color: $color-dark;
     font-weight: 600;
+}
+
+body {
+    background-color: $color-bg;
+    color: $color-dark;
+    font-family: $font-primary;
 }
