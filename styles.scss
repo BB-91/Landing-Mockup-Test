@@ -4,8 +4,7 @@ $font-logo: "Boogaloo";
 $font-primary: "IBM Plex Sans";
 $font-secondary: "Nunito";
 
-$font-size-logo: 60px;
-$font-size-medium: 24px;
+$font-size-medium: max(min(2.6vw, 28px), 16px);
 
 $color-bg: #fefdf8;
 $color-black: #444041;
