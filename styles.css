@@ -12,6 +12,28 @@ body {
   font-family: "IBM Plex Sans";
 }
 
+#logo-group {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 100%;
+}
+
+#logo-text {
+  font-family: "Boogaloo";
+  font-size: min(10vw, 74px);
+}
+
+#button-login {
+  height: min(12vw, 64px);
+  font-size: min(6vw, 32px);
+  padding-top: min(1.5vw, 8px);
+  aspect-ratio: 2.5/1;
+}
+
 #mobile-status-bar,
 header,
 main {
@@ -37,19 +59,10 @@ main {
 }
 
 header {
+  height: min(20vw, 120px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#logo-group {
-  display: flex;
-  align-items: center;
-}
-
-#logo-text {
-  font-family: "Boogaloo";
-  font-size: 60px;
 }
 
 a {
@@ -60,9 +73,6 @@ a {
 
 .button {
   display: block;
-  padding: 10px 0px;
-  width: 140px;
-  height: 60px;
   font-family: "IBM Plex Sans";
   font-size: 24px;
   text-align: center;
@@ -135,10 +145,4 @@ footer {
   text-align: center;
   padding: 20px 0;
   background-color: #fffcdd;
-}
-
-@media screen and (max-width: 460px) {
-  header {
-    flex-direction: column;
-  }
 }

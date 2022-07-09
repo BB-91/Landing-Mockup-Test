@@ -28,6 +28,28 @@ body {
     font-family: $font-primary;
 }
 
+#logo-group {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+#logo {
+    height: 100%;
+}
+
+#logo-text {
+    font-family: $font-logo;
+    font-size: min(10vw, 74px);
+}
+
+#button-login {
+    height: min(12vw, 64px);
+    font-size: min(6vw, 32px);
+    padding-top: min(1.5vw, 8px);
+    aspect-ratio: 2.5/1;
+}
+
 #mobile-status-bar,
 header,
 main {
@@ -53,19 +75,10 @@ main {
 }
 
 header {
+    height: min(20vw, 120px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#logo-group {
-    display: flex;
-    align-items: center;
-  }
-
-#logo-text {
-    font-family: $font-logo;
-    font-size: $font-size-logo;
 }
 
 a {
@@ -76,10 +89,6 @@ a {
 
 .button {
     display: block;
-    padding: 10px 0px;
-
-    width: 140px;
-    height: $font-size-logo;
 
     font-family: $font-primary;
     font-size: $font-size-medium;    
@@ -155,10 +164,4 @@ footer {
     text-align: center;
     padding: $row-gap 0;
     background-color: $color-footer;
-}
-
-@media screen and (max-width: 460px) {
-    header {
-        flex-direction: column;
-    }
 }
