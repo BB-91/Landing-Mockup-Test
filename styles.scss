@@ -4,7 +4,10 @@ $font-logo: "Boogaloo";
 $font-primary: "IBM Plex Sans";
 $font-secondary: "Nunito";
 
-$font-size-medium: max(min(2.6vw, 28px), 16px);
+$font-size-h1: max(min(6.0vw, 28px), 16px);
+$font-size-h2: calc(#{$font-size-h1} - 2px);
+$font-size-h3: calc(#{$font-size-h2} - 2px);
+$font-size-h4: calc(#{$font-size-h3} - 2px);
 
 $color-bg: #fefdf8;
 $color-black: #444041;
@@ -20,10 +23,29 @@ $row-gap: 20px;
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: $font-size-h1;
+    font-family: $font-secondary;
+    color: $color-light;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+    color: $color-light;
+}
+
+h4 {
+    font-size: $font-size-h4;
+    font-weight: 300;
+}
+
 body {
     background-color: $color-bg;
     color: $color-dark;
-    font-size: $font-size-medium;
     font-family: $font-primary;
 }
 
@@ -90,7 +112,6 @@ a {
     display: block;
 
     font-family: $font-primary;
-    font-size: $font-size-medium;    
     text-align: center;
 
     border-radius: 5px;
@@ -137,6 +158,7 @@ a {
     justify-content: space-between;
 
     p {
+        font-size: $font-size-h4;
         width: 68%;
     }
     img {
@@ -144,20 +166,8 @@ a {
     }
 }
 
-h1 {
-    font-family: $font-secondary;
-    color: $color-light;
-}
-
-h3 {
-    color: $color-light;
-}
-
-h4 {
-    font-weight: 300;
-}
-
 footer {
+    font-size: $font-size-h2;
     display: grid;
     row-gap: $row-gap;
     text-align: center;

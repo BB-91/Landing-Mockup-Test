@@ -5,10 +5,29 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: max(min(6.0vw, 28px), 16px);
+  font-family: "Nunito";
+  color: #1ab9f1;
+}
+
+h2 {
+  font-size: calc(max(min(6.0vw, 28px), 16px) - 2px);
+}
+
+h3 {
+  font-size: calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px);
+  color: #1ab9f1;
+}
+
+h4 {
+  font-size: calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px);
+  font-weight: 300;
+}
+
 body {
   background-color: #fefdf8;
   color: #394166;
-  font-size: max(min(2.6vw, 28px), 16px);
   font-family: "IBM Plex Sans";
 }
 
@@ -74,7 +93,6 @@ a {
 .button {
   display: block;
   font-family: "IBM Plex Sans";
-  font-size: max(min(2.6vw, 28px), 16px);
   text-align: center;
   border-radius: 5px;
   border: 1px solid #394166;
@@ -120,26 +138,15 @@ a {
   justify-content: space-between;
 }
 .row p {
+  font-size: calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px);
   width: 68%;
 }
 .row img {
   width: 156px;
 }
 
-h1 {
-  font-family: "Nunito";
-  color: #1ab9f1;
-}
-
-h3 {
-  color: #1ab9f1;
-}
-
-h4 {
-  font-weight: 300;
-}
-
 footer {
+  font-size: calc(max(min(6.0vw, 28px), 16px) - 2px);
   display: grid;
   row-gap: 20px;
   text-align: center;
