@@ -8,9 +8,14 @@
 body {
   background-color: #fefdf8;
   color: #394166;
-  padding: 14px 20px;
   font-size: 24px;
   font-family: "IBM Plex Sans";
+}
+
+#mobile-status-bar,
+header,
+main {
+  padding: 14px 20px;
 }
 
 #mobile-status-bar,
@@ -42,6 +47,12 @@ header {
   font-size: 60px;
 }
 
+a {
+  text-decoration: none;
+  color: #394166;
+  font-weight: 600;
+}
+
 .button {
   display: block;
   padding: 10px 0px;
@@ -49,10 +60,7 @@ header {
   height: 60px;
   font-family: "IBM Plex Sans";
   font-size: 24px;
-  font-weight: 600;
   text-align: center;
-  text-decoration: none;
-  color: #394166;
   border-radius: 5px;
   border: 1px solid #394166;
 }
@@ -111,4 +119,12 @@ h1 {
 
 h3 {
   color: #1ab9f1;
+}
+
+footer {
+  display: grid;
+  row-gap: 20px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fffcdd;
 }

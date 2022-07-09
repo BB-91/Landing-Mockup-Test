@@ -24,9 +24,14 @@ $row-gap: 20px;
 body {
     background-color: $color-bg;
     color: $color-dark;
-    padding: 14px 20px;
     font-size: $font-size-medium;
     font-family: $font-primary;
+}
+
+#mobile-status-bar,
+header,
+main {
+    padding: 14px 20px;
 }
 
 #mobile-status-bar,
@@ -58,6 +63,12 @@ header {
     font-size: $font-size-logo;
 }
 
+a {
+    text-decoration: none;
+    color: $color-dark;
+    font-weight: 600;
+}
+
 .button {
     display: block;
     padding: 10px 0px;
@@ -66,12 +77,9 @@ header {
     height: $font-size-logo;
 
     font-family: $font-primary;
-    font-size: $font-size-medium;
-    font-weight: 600;
+    font-size: $font-size-medium;    
     text-align: center;
-    text-decoration: none;
 
-    color: $color-dark;
     border-radius: 5px;
     border: 1px solid $color-dark;
 }
@@ -131,4 +139,12 @@ h1 {
 
 h3 {
     color: $color-light;
+}
+
+footer {
+    display: grid;
+    row-gap: $row-gap;
+    text-align: center;
+    padding: $row-gap 0;
+    background-color: $color-footer;
 }
