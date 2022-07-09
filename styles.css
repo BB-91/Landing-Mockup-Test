@@ -148,6 +148,10 @@ a {
   width: 156px;
 }
 
+.text-right {
+  padding-left: 30px;
+}
+
 footer {
   font-size: calc(max(min(6.0vw, 28px), 16px) - 2px);
   display: grid;
