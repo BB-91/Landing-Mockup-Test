@@ -71,12 +71,12 @@ body {
     height: calc(#{$font-size-h4} * 3);
     padding-top: calc(#{$font-size-h4} * 0.8);
     aspect-ratio: 2.5/1;
-    margin: auto;
 }
 
 #button-dadvice,
 #button-signup {
     aspect-ratio: 4.0/1;
+    margin: auto;
 }
 
 #mobile-status-bar,

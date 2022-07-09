@@ -53,12 +53,12 @@ body {
   height: calc(calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px) * 3);
   padding-top: calc(calc(calc(calc(max(min(6.0vw, 28px), 16px) - 2px) - 2px) - 2px) * 0.8);
   aspect-ratio: 2.5/1;
-  margin: auto;
 }
 
 #button-dadvice,
 #button-signup {
   aspect-ratio: 4/1;
+  margin: auto;
 }
 
 #mobile-status-bar,
