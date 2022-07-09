@@ -101,7 +101,6 @@ a {
 }
 
 #mobile-app{
-    height: 800px;
     max-width: 85vw;
     display: block;
     margin: $row-gap auto;
@@ -121,7 +120,6 @@ a {
     display: grid;
     row-gap: $row-gap;
     max-width: 520px;
-    margin: 0 30%;
 }
 
 .row {
@@ -157,4 +155,10 @@ footer {
     text-align: center;
     padding: $row-gap 0;
     background-color: $color-footer;
+}
+
+@media screen and (max-width: 460px) {
+    header {
+        flex-direction: column;
+    }
 }
