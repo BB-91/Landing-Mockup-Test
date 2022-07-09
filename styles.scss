@@ -64,11 +64,19 @@ body {
     font-size: min(10vw, 74px);
 }
 
-#button-login {
-    height: min(12vw, 64px);
-    font-size: min(6vw, 32px);
-    padding-top: min(1.5vw, 8px);
+#button-login,
+#button-dadvice,
+#button-signup {
+    font-size: $font-size-h4;
+    height: calc(#{$font-size-h4} * 3);
+    padding-top: calc(#{$font-size-h4} * 0.8);
     aspect-ratio: 2.5/1;
+    margin: auto;
+}
+
+#button-dadvice,
+#button-signup {
+    aspect-ratio: 4.0/1;
 }
 
 #mobile-status-bar,
@@ -121,12 +129,6 @@ a {
 .button.negative{
     color: $color-bg;
     background-color: $color-dark;
-}
-
-#button-dadvice,
-#button-signup {
-    width: 250px;
-    margin: auto;
 }
 
 #mobile-app{
