@@ -1,19 +1,20 @@
-$font-logo: "Boogaloo";
-$font-primary: "IBM Plex Sans";
-$font-secondary: "Nunito";
-
-$font-size-h1: clamp(16px, 6.0vw, 28px);
-$font-size-h2: calc(#{$font-size-h1} - 2px);
-$font-size-h3: calc(#{$font-size-h2} - 2px);
-$font-size-h4: calc(#{$font-size-h3} - 2px);
-
-$color-bg: #fefdf8;
-$color-black: #444041;
-$color-dark: #394166;
-$color-light: #1ab9f1;
-$color-footer: #fffcdd;
-
-$row-gap: 40px;
-$half-gap: calc(#{$row-gap}/2);
-$double-gap: calc(#{$row-gap}*2);
-
+:root {
+    --font-logo: "Boogaloo";
+    --font-primary: "IBM Plex Sans";
+    --font-secondary: "Nunito";
+    
+    --fs1: clamp(16px, 6.0vw, 28px);
+    --fs2: calc(var(--fs1) - 2px);
+    --fs3: calc(var(--fs2) - 2px);
+    --fs4: calc(var(--fs3) - 2px);
+    
+    --color-bg: #fefdf8;
+    --color-black: #444041;
+    --color-dark: #394166;
+    --color-light: #1ab9f1;
+    --color-footer: #fffcdd;
+    
+    --row-gap: 40px;
+    --half-gap: calc(var(--row-gap)/2);
+    --double-gap: calc(var(--row-gap)*2);
+}

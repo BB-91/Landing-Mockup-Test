@@ -1,6 +1,6 @@
 header,
 main {
-    margin: $half-gap $row-gap;
+    margin: var(--half-gap) var(--row-gap);
 }
 
 header {
@@ -19,7 +19,7 @@ header {
         }
 
         #logo-text {
-            font-family: $font-logo;
+            font-family: var(--font-logo);
             font-size: min(10vw, 74px);
         }
       }
@@ -31,19 +31,19 @@ header {
     #mobile-app{
         max-width: 85vw;
         display: block;
-        margin: $row-gap auto;
+        margin: var(--row-gap) auto;
     }
 }
 
 #section-middle {
     display: grid;
-    row-gap: $row-gap;
+    row-gap: var(--row-gap);
     text-align: center;
 }
 
 #section-bottom {
     display: grid;
-    row-gap: $row-gap;
+    row-gap: var(--row-gap);
     max-width: 520px;
     margin: 0 auto;
 
@@ -54,7 +54,7 @@ header {
         justify-content: space-between;
     
         p {
-            font-size: $font-size-h4;
+            font-size: var(--fs4);
             width: 68%;
         }
         img {
@@ -68,11 +68,11 @@ header {
 }
 
 footer {
-    font-size: $font-size-h2;
+    font-size: var(--fs2);
     display: grid;
-    row-gap: $half-gap;
+    row-gap: var(--half-gap);
     text-align: center;
-    padding: $half-gap 0;
-    margin-top: $double-gap;
-    background-color: $color-footer;
+    padding: var(--half-gap) 0;
+    margin-top: var(--double-gap);
+    background-color: var(--color-footer);
 }

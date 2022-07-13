@@ -5,33 +5,33 @@
 }
 
 h1 {
-    font-size: $font-size-h1;
-    font-family: $font-secondary;
-    color: $color-light;
+    font-size: var(--fs1);
+    font-family: var(--font-secondary);
+    color: var(--color-light);
 }
 
 h2 {
-    font-size: $font-size-h2;
+    font-size: var(--fs2);
 }
 
 h3 {
-    font-size: $font-size-h3;
-    color: $color-light;
+    font-size: var(--fs3);
+    color: var(--color-light);
 }
 
 h4 {
-    font-size: $font-size-h4;
+    font-size: var(--fs4);
     font-weight: 300;
 }
 
 a {
     text-decoration: none;
-    color: $color-dark;
+    color: var(--color-dark);
     font-weight: 600;
 }
 
 body {
-    background-color: $color-bg;
-    color: $color-dark;
-    font-family: $font-primary;
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+    font-family: var(--font-primary);
 }

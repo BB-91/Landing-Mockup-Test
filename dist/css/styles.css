@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,300&family=Nunito:wght@800&display=swap");
+:root {
+  --font-logo: "Boogaloo";
+  --font-primary: "IBM Plex Sans";
+  --font-secondary: "Nunito";
+  --fs1: clamp(16px, 6.0vw, 28px);
+  --fs2: calc(var(--fs1) - 2px);
+  --fs3: calc(var(--fs2) - 2px);
+  --fs4: calc(var(--fs3) - 2px);
+  --color-bg: #fefdf8;
+  --color-black: #444041;
+  --color-dark: #394166;
+  --color-light: #1ab9f1;
+  --color-footer: #fffcdd;
+  --row-gap: 40px;
+  --half-gap: calc(var(--row-gap)/2);
+  --double-gap: calc(var(--row-gap)*2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,56 +24,56 @@
 }
 
 h1 {
-  font-size: clamp(16px, 6vw, 28px);
-  font-family: "Nunito";
-  color: #1ab9f1;
+  font-size: var(--fs1);
+  font-family: var(--font-secondary);
+  color: var(--color-light);
 }
 
 h2 {
-  font-size: calc(clamp(16px, 6vw, 28px) - 2px);
+  font-size: var(--fs2);
 }
 
 h3 {
-  font-size: calc(calc(clamp(16px, 6vw, 28px) - 2px) - 2px);
-  color: #1ab9f1;
+  font-size: var(--fs3);
+  color: var(--color-light);
 }
 
 h4 {
-  font-size: calc(calc(calc(clamp(16px, 6vw, 28px) - 2px) - 2px) - 2px);
+  font-size: var(--fs4);
   font-weight: 300;
 }
 
 a {
   text-decoration: none;
-  color: #394166;
+  color: var(--color-dark);
   font-weight: 600;
 }
 
 body {
-  background-color: #fefdf8;
-  color: #394166;
-  font-family: "IBM Plex Sans";
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  font-family: var(--font-primary);
 }
 
 .button {
   display: block;
-  font-family: "IBM Plex Sans";
+  font-family: var(--font-primary);
   text-align: center;
   border-radius: 5px;
-  border: 1px solid #394166;
+  border: 1px solid var(--color-dark);
 }
 
 .button.negative {
-  color: #fefdf8;
-  background-color: #394166;
+  color: var(--color-bg);
+  background-color: var(--color-dark);
 }
 
 #button-login,
 #button-dadvice,
 #button-signup {
-  font-size: calc(calc(calc(clamp(16px, 6vw, 28px) - 2px) - 2px) - 2px);
-  height: calc(calc(calc(calc(clamp(16px, 6vw, 28px) - 2px) - 2px) - 2px) * 3);
-  padding-top: calc(calc(calc(calc(clamp(16px, 6vw, 28px) - 2px) - 2px) - 2px) * 0.8);
+  font-size: var(--fs4);
+  height: calc(var(--fs4) * 3);
+  padding-top: calc(var(--fs4) * 0.8);
   aspect-ratio: 2.5/1;
 }
 
@@ -67,7 +85,7 @@ body {
 
 header,
 main {
-  margin: calc(40px/2) 40px;
+  margin: var(--half-gap) var(--row-gap);
 }
 
 header {
@@ -85,7 +103,7 @@ header #logo-group #logo {
   height: 100%;
 }
 header #logo-group #logo-text {
-  font-family: "Boogaloo";
+  font-family: var(--font-logo);
   font-size: min(10vw, 74px);
 }
 
@@ -95,18 +113,18 @@ header #logo-group #logo-text {
 #section-top #mobile-app {
   max-width: 85vw;
   display: block;
-  margin: 40px auto;
+  margin: var(--row-gap) auto;
 }
 
 #section-middle {
   display: grid;
-  row-gap: 40px;
+  row-gap: var(--row-gap);
   text-align: center;
 }
 
 #section-bottom {
   display: grid;
-  row-gap: 40px;
+  row-gap: var(--row-gap);
   max-width: 520px;
   margin: 0 auto;
 }
@@ -117,7 +135,7 @@ header #logo-group #logo-text {
   justify-content: space-between;
 }
 #section-bottom .row p {
-  font-size: calc(calc(calc(clamp(16px, 6vw, 28px) - 2px) - 2px) - 2px);
+  font-size: var(--fs4);
   width: 68%;
 }
 #section-bottom .row img {
@@ -128,11 +146,11 @@ header #logo-group #logo-text {
 }
 
 footer {
-  font-size: calc(clamp(16px, 6vw, 28px) - 2px);
+  font-size: var(--fs2);
   display: grid;
-  row-gap: calc(40px/2);
+  row-gap: var(--half-gap);
   text-align: center;
-  padding: calc(40px/2) 0;
-  margin-top: calc(40px*2);
-  background-color: #fffcdd;
+  padding: var(--half-gap) 0;
+  margin-top: var(--double-gap);
+  background-color: var(--color-footer);
 }/*# sourceMappingURL=styles.css.map */
